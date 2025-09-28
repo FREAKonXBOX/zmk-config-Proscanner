@@ -1,21 +1,21 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: prospector
-      url-base: https://github.com/t-ogura
+  - name: zmkfirmware
+    url-base: https://github.com/zmkfirmware
+  - name: prospector
+    url-base: https://github.com/t-ogura
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-    - name: prospector-zmk-module
-      remote: prospector
-      revision: v1.1.1
-      path: modules/prospector-zmk-modulemanifest:
-    - name: zmk-keyboards-totem
-      url: https://github.com/victorlucachi/zmk-keyboards-totem
-      revision: main
-      path: modules/zmk-keyboards-totem
+  - name: zmk
+    remote: zmkfirmware
+    revision: main
+    import: app/west.yml
+  - name: zmk-keyboards-totem
+    url: https://github.com/victorlucachi/zmk-keyboards-totem
+    revision: main
+    path: modules/zmk-keyboards-totem
+  - name: prospector-zmk-module
+    remote: prospector
+    revision: v1.1.1
+    path: modules/prospector-zmk-module
   self:
     path: config
