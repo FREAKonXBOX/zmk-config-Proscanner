@@ -2,19 +2,26 @@ manifest:
   remotes:
   - name: zmkfirmware
     url-base: https://github.com/zmkfirmware
-
   - name: prospector
     url-base: https://github.com/t-ogura
-
+  - name: zzeneg
+    url-base: https://github.com/zzeneg
+  - name: srwi
+    url-base: https://github.com/srwi
   projects:
   - name: zmk
     remote: zmkfirmware
-    revision: v0.3
-    import: app/west.yml
-    
+    revision: main
+    import: app/west.yml 
   - name: prospector-zmk-module
     remote: prospector
-    revision: v2.0.0
+    revision: v2.2.0
     path: modules/prospector-zmk-module
+  - name: zmk-raw-hid
+    remote: zzeneg
+    revision: main
+  - name: zmk-keypeek-layer-notifier
+    remote: srwi
+    revision: master 
   self:
     path: config
